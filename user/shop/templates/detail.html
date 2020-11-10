@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{product.product_name}}</title>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <img src="/media/{{product.image}}" width=250>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary cart mx-3 my-4">Buy Now</button>
+                <button class="btn btn-primary cart mx-3 my-4">Add To Cart</button>
+            </div>
+        </div>
+    <div class="col-md-8">
+    <h5>{{product.product_name}}</h5>
+    <p><b>Rs:</b>{{product.price}}</p>
+    <p>{{product.discrt}}</p>
+    <br>
+    <p style="color: green;">In Stock</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>

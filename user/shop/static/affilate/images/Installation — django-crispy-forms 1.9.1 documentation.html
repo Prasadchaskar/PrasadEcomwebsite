@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation — django-crispy-forms 1.9.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script async="" src="./Installation — django-crispy-forms 1.9.1 documentation_files/analytics.js.download"></script><script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/modernizr.min.js.download"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="./Installation — django-crispy-forms 1.9.1 documentation_files/documentation_options.js.download"></script>
+        <script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/jquery.js.download"></script>
+        <script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/underscore.js.download"></script>
+        <script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/doctools.js.download"></script>
+        <script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/language_data.js.download"></script>
+        <script async="async" type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/readthedocs-doc-embed.js.download"></script>
+    
+    <script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/theme.js.download"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="./Installation — django-crispy-forms 1.9.1 documentation_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="./Installation — django-crispy-forms 1.9.1 documentation_files/pygments.css" type="text/css">
+    <link rel="index" title="Index" href="https://django-crispy-forms.readthedocs.io/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://django-crispy-forms.readthedocs.io/en/latest/search.html">
+    <link rel="next" title="crispy filter" href="https://django-crispy-forms.readthedocs.io/en/latest/filters.html">
+    <link rel="prev" title="Forms have never been this crispy" href="https://django-crispy-forms.readthedocs.io/en/latest/index.html"> 
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html">
+
+<link rel="stylesheet" href="./Installation — django-crispy-forms 1.9.1 documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/readthedocs-data.js.download"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = "install"
+READTHEDOCS_DATA['source_suffix'] = ".rst"
+</script>
+
+<script type="text/javascript" src="./Installation — django-crispy-forms 1.9.1 documentation_files/readthedocs-analytics.js.download" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="https://django-crispy-forms.readthedocs.io/en/latest/index.html" class="icon icon-home"> django-crispy-forms
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://django-crispy-forms.readthedocs.io/en/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#"><span class="toctree-expand"></span>Installation</a><ul>
+<li class="toctree-l2 current"><a class="reference internal current" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms">Installing django-crispy-forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs">Template packs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#setting-media-files">Setting media files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/filters.html">crispy filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/crispy_tag_forms.html">{% crispy %} tag with forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/form_helper.html">FormHelper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/layouts.html">Layouts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/template_packs.html">How to create your own template packs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/crispy_tag_formsets.html">{% crispy %} tag with formsets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/dynamic_layouts.html">Updating layouts on the go</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/api_helpers.html">API helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/api_layout.html">API Layout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/api_templatetags.html">API templatetags</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      <div id="rtd-sidebar" class="ethical-rtd ethical-dark-theme"><div class="ethical-sidebar"><div class="ethical-content"><a href="https://server.ethicalads.io/proxy/click/1161/2d5f9e68-d851-4a80-902c-93260ddb6a23/" rel="nofollow" target="_blank" class="ethical-image-link"><img src="./Installation — django-crispy-forms 1.9.1 documentation_files/BNR_4-240x180_jlffBto.jpg"></a><div class="ethical-text"><a href="https://server.ethicalads.io/proxy/click/1161/2d5f9e68-d851-4a80-902c-93260ddb6a23/" rel="nofollow" target="_blank">Introducing App Platform, a new PaaS that gets your apps to market, faster. <strong>Try Now with $100 Credit</strong></a></div></div><div class="ethical-callout"><small><em><a href="https://readthedocs.org/sustainability/advertising/">Sponsored</a><span> · </span><a href="https://docs.readthedocs.io/en/latest/ethical-advertising.html">Ads served ethically</a></em></small></div></div><img src="./Installation — django-crispy-forms 1.9.1 documentation_files/saved_resource" style="display: none;"></div></div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://django-crispy-forms.readthedocs.io/en/latest/index.html">django-crispy-forms</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="https://django-crispy-forms.readthedocs.io/en/latest/index.html">Docs</a> »</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/django-crispy-forms/django-crispy-forms/blob/master/docs/install.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installing-django-crispy-forms">
+<span id="install"></span><h2>Installing django-crispy-forms<a class="headerlink" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#installing-django-crispy-forms" title="Permalink to this headline">¶</a></h2>
+<p>Install latest stable version into your python environment using pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">django</span><span class="o">-</span><span class="n">crispy</span><span class="o">-</span><span class="n">forms</span>
+</pre></div>
+</div>
+<p>If you want to install development version (unstable), you can do so doing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">django</span><span class="o">-</span><span class="n">crispy</span><span class="o">-</span><span class="n">forms</span><span class="o">/</span><span class="n">django</span><span class="o">-</span><span class="n">crispy</span><span class="o">-</span><span class="n">forms</span><span class="o">.</span><span class="n">git</span><span class="nd">@dev</span><span class="c1">#egg=django-crispy-forms</span>
+</pre></div>
+</div>
+<p>Or, if you’d like to install the development version as a git repository (so
+you can <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> updates), use the <code class="docutils literal notranslate"><span class="pre">-e</span></code> flag with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code>, like
+so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="n">git</span><span class="o">+</span><span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">django</span><span class="o">-</span><span class="n">crispy</span><span class="o">-</span><span class="n">forms</span><span class="o">/</span><span class="n">django</span><span class="o">-</span><span class="n">crispy</span><span class="o">-</span><span class="n">forms</span><span class="o">.</span><span class="n">git</span><span class="nd">@dev</span><span class="c1">#egg=django-crispy-forms</span>
+</pre></div>
+</div>
+<p>Once installed add <code class="docutils literal notranslate"><span class="pre">crispy_forms</span></code> to your <code class="docutils literal notranslate"><span class="pre">INSTALLED_APPS</span></code> in settings.py:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">...</span>
+    <span class="s1">'crispy_forms'</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>In production environments, always activate Django template cache loader. This is available since Django 1.2 and what it does is basically load templates once, then cache the result for every subsequent render. This leads to a significant performance improvement. To see how to set it up refer to the fabulous <a class="reference external" href="https://docs.djangoproject.com/en/2.2/ref/templates/api/#django.template.loaders.cached.Loader">Django docs page</a>.</p>
+</div>
+<div class="section" id="template-packs">
+<h2>Template packs<a class="headerlink" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs" title="Permalink to this headline">¶</a></h2>
+<p>Since version 1.1.0, django-crispy-forms has built-in support for different CSS frameworks, known as template packs within django-crispy-forms:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">bootstrap</span></code> <a class="reference external" href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a> is crispy-forms’s default template pack, version 2 of the popular simple and flexible HTML, CSS, and Javascript for user interfaces from Twitter.</li>
+<li><code class="docutils literal notranslate"><span class="pre">bootstrap3</span></code> Twitter Bootstrap version 3.</li>
+<li><code class="docutils literal notranslate"><span class="pre">bootstrap4</span></code> support for Twitter Bootstrap version 4.</li>
+<li><code class="docutils literal notranslate"><span class="pre">uni-form</span></code> <a class="reference external" href="http://sprawsm.com/uni-form">Uni-form</a> is a nice looking, well structured, highly customizable, accessible and usable forms.</li>
+</ul>
+<p>In addition the following template packs are available through separately maintained projects.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">foundation</span></code> <a class="reference external" href="http://foundation.zurb.com/">Foundation</a> In the creator’s words, “The most advanced responsive front-end framework in the world.” This template pack is available through <a class="reference external" href="https://github.com/sveetch/crispy-forms-foundation">crispy-forms-foundation</a></li>
+</ul>
+<p>If your form CSS framework is not supported and it’s open source, you can create a <code class="docutils literal notranslate"><span class="pre">crispy-forms-templatePackName</span></code> project. Please let me know, so I can link to it. Documentation on <a class="reference internal" href="https://django-crispy-forms.readthedocs.io/en/latest/template_packs.html#template-packs"><span class="std std-ref">How to create your own template packs</span></a> is provided.</p>
+<p>You can set your default template pack for your project using the <code class="docutils literal notranslate"><span class="pre">CRISPY_TEMPLATE_PACK</span></code> Django settings variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CRISPY_TEMPLATE_PACK</span> <span class="o">=</span> <span class="s1">'uni_form'</span>
+</pre></div>
+</div>
+<p>Please check the documentation of your template pack package for the correct value of the <code class="docutils literal notranslate"><span class="pre">CRISPY_TEMPLATE_PACK</span></code> setting (there are packages which provide more than one template pack).</p>
+</div>
+<div class="section" id="setting-media-files">
+<h2>Setting media files<a class="headerlink" href="https://django-crispy-forms.readthedocs.io/en/latest/install.html#setting-media-files" title="Permalink to this headline">¶</a></h2>
+<p>crispy-forms does not include static files. You will need to include the proper corresponding media files yourself depending on what CSS framework (Template pack) you are using. This might involve one or more CSS and JS files. Read CSS framework’s docs for help on how to set it up.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="https://django-crispy-forms.readthedocs.io/en/latest/filters.html" class="btn btn-neutral float-right" title="crispy filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="https://django-crispy-forms.readthedocs.io/en/latest/index.html" class="btn btn-neutral float-left" title="Forms have never been this crispy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr><div><div id="rtd-footer" class="ethical-rtd"></div></div>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2009-2013, Miguel Araujo and Daniel Greenfeld
+      
+        <span class="commit">
+          Revision <code>5a3bdad0</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        <dd><a href="https://django-crispy-forms.readthedocs.io/en/latest/install.html">latest</a></dd>
+         </strong> 
+        
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/en/stable/install.html">stable</a></dd>
+        
+        
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/en/1.9.1/install.html">1.9.1</a></dd>
+        
+        
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/en/1.9.0/install.html">1.9.0</a></dd>
+        
+        
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/en/1.8.1/install.html">1.8.1</a></dd>
+        
+        
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/en/1.7.2/install.html">1.7.2</a></dd>
+        
+        
+      </dl>
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/_/downloads/en/latest/pdf/">PDF</a></dd>
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/_/downloads/en/latest/htmlzip/">HTML</a></dd>
+        
+        <dd><a href="https://django-crispy-forms.readthedocs.io/_/downloads/en/latest/epub/">Epub</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/django-crispy-forms/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/django-crispy-forms/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/django-crispy-forms/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/django-crispy-forms/django-crispy-forms/blob/master/docs/install.rst">View</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="https://readthedocs.org/projects/django-crispy-forms/search/" method="get">
+              <input type="text" name="q" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+      
+      
+
+      <hr>
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+
+<div id="rtd-fixed-footer"></div></body></html>

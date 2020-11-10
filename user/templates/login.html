@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <form method="POST">
+          {% csrf_token %}
+
+          <h1>Log In</h1>
+          {{ form.as_p }}
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+        <div class="border-top pt-3">
+          <small class="text-muted">
+            Need An Account?
+            <a class="ml-2" href="{% url 'register' %}">Sign Up Now</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
